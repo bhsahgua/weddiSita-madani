@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Wedding Of Sita & Madani</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: #4C3613;
+ font-family: Georgia, serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 648px;
+
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+.container .btn {
+position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #4C3613; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity:75%;
+ }
+.container .btn:hover {
+  background-color:  #a37429;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#f2f2f2;
+  font-size:22px;
+  font-weight: bold;
+  display:block;
+}
+#name {display:block;}
+#cover {display:block;}
+#image {display: none;        }
+#image1 {display: none;        }
+#image2 {display: none;        }
+#image3 {display: none;        }
+#image4 {display: none;        }
+.btn2{
+  position: absolute;
+  top: 73%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 12px;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f2f2f2; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity:75%;display:none;}
+
+</style>
+   </head>
+   <body>
+
+<audio id="myAudio">
+ 
+  <source src="https://drive.google.com/uc?export=open&id=1sgXl07V1WIiHopLMsjfOezqZiucsV4ZR" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="container">
+ <img id="cover" src="https://drive.google.com/uc?export=view&id=1HwPMZkzJuPSAKuGEFWFtRQrB0-4PaiI0" style="max-width:100%;height:auto;" align="middle">
+<div class="centered" id="name">YUAN</div> 
+<button class="btn" onclick="show();playAudio();" id="btnID">OPEN INVITATION</button>
+</div>
+<img id="image" src="https://drive.google.com/uc?export=view&id=1Vj0C_7fzUb_p3cwzF1N8TwseLcZHGKs-" style="max-width:100%;height:auto;" align="middle">
+<img id="image1" src="https://drive.google.com/uc?export=view&id=1NryeRZ22pgCsejU0MeZ9idS8EVMvdk-6" style="max-width:100%;height:auto;" align="middle"> 
+<img id="image2" src="https://drive.google.com/uc?export=view&id=1Lg9-sHZYnjMUKJ8ZJVWj8jz2i6PxgoL3" style="max-width:100%;height:auto;" align="middle">
+<img id="image3" src="https://drive.google.com/uc?export=view&id=1kGxDi9guezl82ix3beQvS_tOcHzo1svM" style="max-width:100%;height:auto;" align="middle">
+<div class="container">
+<img id="image4" src="https://drive.google.com/uc?export=view&id=12tJdlFS4JiWq9O0yK0bks7H1hdwPUH3E" style="max-width:100%;height:auto;" align="middle">
+<div class="btn2" id="linkmaps"><a href="https://maps.app.goo.gl/8ca4vRxvM5232qeN8"> CLICK TO VIEW MAPS</a></button>
+</div>
+
+<script>
+
+	var x = document.getElementById("myAudio"); 
+	function playAudio() { 
+  	x.play(); 
+	}
+ 
+        function show() {
+            /* Access image by id and change 
+            the display property to block*/
+           document.getElementById('btnID')
+                .style.display = "none";
+	   document.getElementById('image')
+                .style.display = "block";
+           document.getElementById('linkmaps')
+                .style.display = "block";
+	    document.getElementById('image1')
+                .style.display = "block";
+   	    document.getElementById('image2')
+                .style.display = "block";
+	    document.getElementById('image3')
+                .style.display = "block";
+	 document.getElementById('image4')
+                .style.display = "block";
+	    document.getElementById('cover')
+                .style.display = "none";
+            document.getElementById('name')
+                .style.display = "none";
+
+        }
+
+
+    </script>
+
+</body>
+</html>
